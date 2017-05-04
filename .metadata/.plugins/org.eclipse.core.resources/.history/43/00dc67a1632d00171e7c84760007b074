@@ -1,0 +1,112 @@
+package textExcel;
+
+// Update this file with your own code.
+
+public class Spreadsheet implements Grid
+{
+	private int rows = 20;
+	private int cols = 12;
+	private Cell[][] cellSpreadSheet;
+	
+	public Spreadsheet(){
+		cellSpreadSheet = new Cell[rows][cols];
+		for(int i = 0; i < rows; i ++){
+			for(int j =0; j < cols; j++){
+				cellSpreadSheet[i][j] = new EmptyCell();
+			}
+		}
+	}
+	public String makeGrid(){
+		String grid = "   |";
+		char letter = 'A';
+		for(int i = 0; i < 12; i++){
+			grid =  grid + letter + "         |"; 
+			letter++;
+		}
+		grid = grid + "\n1  ";
+		for(int i = 0; i < 20; i++){
+			for(int j = 0; j < 12; j++){
+				grid = grid + "|          ";
+			}
+			int index  = i + 2;
+			if(index >= 21){
+				grid = grid + "|" + "\n";
+			}else{
+				grid = grid + "| " + "\n" + index + " ";
+				if(index < 10){
+					grid = grid + " ";
+				}
+			}
+		}
+		return grid;
+	}
+	
+	
+	@Override
+
+	public String processCommand(String command)
+	{
+		String[] split = command.split(" ");
+		if(command.equals("clear")){
+			String grid = makeGrid();
+			return grid;
+		}else if(split.length == 1){
+			cellInspection(command);
+		}
+		if(command.contains("=")){
+			assign(command);
+		}
+		return "";
+	}
+	
+	public Cell cellInspection(String command){
+		int row = command.charAt(0) - 'A';
+		int col = Integer.parseInt(command.substring(1));
+		return cellSpreadSheet[row][col];
+	}
+	
+	public void assign(String command){
+		String text;
+		int row = command.charAt(0) - 'A';
+		int column = command.charAt(1);
+		text = command.substring(command.indexOf("=") + 2, command.length() - 1);
+		cellSpreadSheet[row][column] = new TextCell(text);
+	}
+	
+	public Cell[][] clear(){
+		for(int i = 0; i < rows; i ++){
+			for(int j =0; j < cols; j++){
+				cellSpreadSheet[i][j] = new EmptyCell();
+			}
+		}
+		return cellSpreadSheet;
+	}
+	
+	@Override
+	
+	
+	public int getRows()
+	{
+		return this.rows;
+	}
+
+	@Override
+	public int getCols()
+	{
+		return this.cols;
+	}
+
+	@Override
+	public Cell getCell(Location loc)
+	{
+		return null;
+	}
+
+	@Override
+	public String getGridText()
+	{
+		String grid = makeGrid();
+		return grid;
+	}
+
+}
