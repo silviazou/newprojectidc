@@ -7,7 +7,7 @@ public class Spreadsheet implements Grid
 	private int gridRows = 20;
 	private int gridCols = 12;
 	private Cell[][] cellSpreadSheet;
-	
+
 	public Spreadsheet(){
 		cellSpreadSheet = new Cell[gridRows][gridCols];
 		for(int i = 0; i < gridRows; i ++){
@@ -16,8 +16,8 @@ public class Spreadsheet implements Grid
 			}
 		}
 	}
-	
-	
+
+
 	@Override
 
 	public String processCommand(String command)
@@ -26,7 +26,7 @@ public class Spreadsheet implements Grid
 		SpreadsheetLocation loc = new SpreadsheetLocation(split[0].toUpperCase());  // find location
 		int row = loc.getRow();
 		int col = loc.getCol();
-		
+
 		if((command.trim()).equals("")){
 			return "";                                                            //Checks for blank command
 		}
@@ -41,15 +41,15 @@ public class Spreadsheet implements Grid
 		}
 		return getGridText();
 	}
-	
+
 	public String cellInspection(int row, int col){
 		return cellSpreadSheet[row][col].fullCellText();
 	}
-	
+
 	public void assign(int row, int col, String text){			//finds assignment value and assigns cells to value
 		cellSpreadSheet[row][col] = new TextCell(text);				
 	}
-	
+
 	public void clear(){
 		for(int i = 0; i < gridRows; i ++){
 			for(int j =0; j < gridCols; j++){
@@ -58,12 +58,12 @@ public class Spreadsheet implements Grid
 		}
 	}
 	public void clearCell(int row, int col){
-		
+
 		cellSpreadSheet[row][col] = new EmptyCell();                       //assigns to EmptyCell
 	}
 	@Override
-	
-	
+
+
 	public int getRows()
 	{
 		return this.gridRows;                                    //returns num rows
@@ -80,7 +80,7 @@ public class Spreadsheet implements Grid
 	{
 		int row = loc.getRow();
 		int col = loc.getCol();
- 		return cellSpreadSheet[row][col];                                  //Returns cell at location
+		return cellSpreadSheet[row][col];                                  //Returns cell at location
 	} 
 
 	@Override

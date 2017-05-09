@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+public class InputEvolution {
+	private static Character player;
+	private static int age;
+	private static String name;
+	private static int hunger = 0;
+	
+	public static void main(String[] args) {
+		Scanner userInput = new Scanner(System.in);
+		System.out.println("Welcome to .... College, Are you ready to begin your semester? (yes or no)");
+		String response = userInput.nextLine();
+		if((response.toLowerCase()).equals("yes")){
+			System.out.println("...");
+			intro();
+		}else if(response.toLowerCase().equals("no")){
+			System.out.println("That's too bad. Come back when you are ready");
+		}else{
+			System.out.println("That is not a volid response. Please try again...");
+		}	
+		userInput.close();
+		
+	}
+	
+	public static void intro(){
+		Scanner userInput = new Scanner(System.in);
+		System.out.println("Hello there, I am the headmaster of this school. What is your name? (Type name)");
+		name = userInput.nextLine();
+		System.out.println("Hmmmm. Interesting name. What is your age" + name + "?(Type age)");
+		age = userInput.nextInt();
+		System.out.println("Perfect! We are in need of young wizards like you!\nAllow me to give you a tour of this place...\n"
+				+"Life here is simple. If you would like to do anything, simply type it into your command book.\n"
+				+ "Try typing the word eat (type eat)");
+		String response = userInput.nextLine();
+		processCommand(response);
+		
+	}
+	
+	public static void training(){
+		System.out.println("");
+	}
+	
+	public static void printCommands(){
+		System.out.println("sleep\neat\ntrain\nupgrade\nwork");
+	}
+	
+	public static void processCommand(String response){
+		if(response.toLowerCase().equals("eat")){
+			eat();
+		}else if(response.toLowerCase().equals("sleep")){
+			sleep();
+		}else if(response.toLowerCase().equals("train")){
+			train();
+		}else if(response.toLowerCase().equals("upgrade")){
+			upgrade();
+		}else if(response.toLowerCase().equals("work")){
+			work();
+		}
+	}
+	
+	public static void eat(){
+		hunger += 50;
+		System.out.println("You ate a meal. You now have " + hunger + "hunger");
+	}
+	
+	public static void sleep(){
+		
+	}
+	
+	public static void train(){
+		
+	}
+	
+	public static void upgrade(){
+		
+	}
+	
+	public static void work(){
+		
+	}
+
+}

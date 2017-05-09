@@ -8,14 +8,14 @@ public class SpreadsheetLocation implements Location
 	int col;
 	private String cellName;
     @Override
-    public int getRow()
+    public int getCol()
     {
     	row =  Integer.parseInt(cellName.substring(1, 2));
     	return row - 1;
     }
 
     @Override
-    public int getCol()
+    public int getRow()
     {
     	col = cellName.charAt(0);
     	return col - 'A';

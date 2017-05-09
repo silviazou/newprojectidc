@@ -1,0 +1,11 @@
+
+public class Day{
+	private int day = 1;
+	
+	public Day(){
+	}
+	
+	public int getDate(){
+		return date;
+	}
+}
