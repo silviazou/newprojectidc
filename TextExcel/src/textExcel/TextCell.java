@@ -11,29 +11,23 @@ public class TextCell implements Cell {
 	@Override
 	public String abbreviatedCellText() {
 		if((text.length())> 10){
-			return truncate(text);
+			truncate();
 		}else if(text.length() < 10){
-			return pad(text);
-		}else{
-			return text;
+			pad();
 		}
-		
+		return text;
 	}
 	
-	public String truncate(String text){
-		int num2Remove = text.length() - 10;
-		for(int i = 0; i < num2Remove; i++){
+	public void truncate(){
+		while(text.length() > 10){
 			text = text.substring(0, text.length() -1);
 		}
-		return text;
 	}
 	
-	public String pad(String text){
-		int numSpaces = 10 - text.length();
-		for(int i = 0; i < numSpaces; i++){
+	public void pad(){
+		while(text.length() < 10){
 			text += " ";
 		}
-		return text;
 	}
 
 	@Override

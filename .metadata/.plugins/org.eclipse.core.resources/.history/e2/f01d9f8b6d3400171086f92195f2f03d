@@ -1,0 +1,6 @@
+
+public class year {
+	private int year = 0;
+	
+	
+}

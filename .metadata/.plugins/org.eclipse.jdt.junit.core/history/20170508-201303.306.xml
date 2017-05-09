@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="A_Checkpoint2" project="TextExcel" tests="18" started="18" failures="10" errors="5" ignored="0">
+  <testsuite name="textExcel.TestsALL.A_Checkpoint2" time="0.189">
+    <testcase name="testProcessCommandInspection" classname="textExcel.TestsALL.A_Checkpoint2" time="0.012">
+      <failure>
+        <expected>"first"</expected>
+        <actual>= "first" </actual>org.junit.ComparisonFailure: inspection of string cell expected:&lt;["first"]&gt; but was:&lt;[= "first" ]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testProcessCommandInspection(TestsALL.java:264)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testLongStringCellNoSpaces" classname="textExcel.TestsALL.A_Checkpoint2" time="0.008">
+      <failure>
+        <expected>ThisIsALon</expected>
+        <actual>= "ThisIsA</actual>org.junit.ComparisonFailure: greeting cell text expected:&lt;[ThisIsALon]&gt; but was:&lt;[= "ThisIsA]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testLongStringCellNoSpaces(TestsALL.java:311)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testLowerCaseCellProcessInspection" classname="textExcel.TestsALL.A_Checkpoint2" time="0.003">
+      <failure>
+        <expected>""</expected>
+        <actual>= ""      </actual>org.junit.ComparisonFailure: processed inspection text expected:&lt;[""]&gt; but was:&lt;[= ""      ]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testLowerCaseCellProcessInspection(TestsALL.java:334)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testClearLocation" classname="textExcel.TestsALL.A_Checkpoint2" time="0.005">
+      <error>java.lang.NumberFormatException: For input string: "LEAR"&#13;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)&#13;
+	at java.lang.Integer.parseInt(Integer.java:580)&#13;
+	at java.lang.Integer.parseInt(Integer.java:615)&#13;
+	at textExcel.SpreadsheetLocation.getRow(SpreadsheetLocation.java:13)&#13;
+	at textExcel.Spreadsheet.processCommand(Spreadsheet.java:27)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testClearLocation(TestsALL.java:250)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testClear" classname="textExcel.TestsALL.A_Checkpoint2" time="0.004">
+      <error>java.lang.NumberFormatException: For input string: "LEAR"&#13;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)&#13;
+	at java.lang.Integer.parseInt(Integer.java:580)&#13;
+	at java.lang.Integer.parseInt(Integer.java:615)&#13;
+	at textExcel.SpreadsheetLocation.getRow(SpreadsheetLocation.java:13)&#13;
+	at textExcel.Spreadsheet.processCommand(Spreadsheet.java:27)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testClear(TestsALL.java:238)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testProcessCommandSpecialStrings" classname="textExcel.TestsALL.A_Checkpoint2" time="0.026">
+      <failure>
+        <expected>   |A         |B         |C         |D         |E         |F         |G         |H         |I         |J         |K         |L         |
+1  |          |          |          |          |          |          |          |          |          |          |          |          |
+2  |          |          |          |          |          |          |          |          |          |          |          |          |
+3  |          |          |          |          |          |          |          |          |          |          |          |          |
+4  |          |          |          |          |          |          |          |          |          |          |          |          |
+5  |          |          |          |          |          |          |          |          |          |          |          |          |
+6  |          |          |          |          |          |          |          |          |          |          |          |          |
+7  |          |A1 = ( avg|          |          |          |          |          |          |          |          |          |          |
+8  |          |          |          |          |          |          |          |          |          |          |          |          |
+9  |          |          |          |          |          |          |          |          |          |          |          |          |
+10 |          |          |          |          |          |          |          |          |          |          |          |          |
+11 |          |          |          |          |          |          |          |          |          |          |          |          |
+12 |          |          |          |          |          |          |          |          |          |          |          |          |
+13 |          |          |          |          |          |          |          |          |          |          |          |          |
+14 |          |          |          |          |          |          |          |          |          |          |          |          |
+15 |          |          |          |          |          |          |          |          |          |          |          |          |
+16 |          |          |          |          |          |          |          |          |          |          |          |          |
+17 |          |          |          |          |          |          |          |          |          |          |          |          |
+18 |          |          |          |          |          |          |          |          |          |          |          |          |
+19 |          |          |          |          |          |          |          |          |          |          |          |          |
+20 |          |          |          |          |          |          |          |          |          |          |          |          |
+</expected>
+        <actual>   |A         |B         |C         |D         |E         |F         |G         |H         |I         |J         |K         |L         |
+1  |          |          |          |          |          |          |          |          |          |          |          |          |
+2  |          |          |          |          |          |          |          |          |          |          |          |          |
+3  |          |          |          |          |          |          |          |          |          |          |          |          |
+4  |          |          |          |          |          |          |          |          |          |          |          |          |
+5  |          |          |          |          |          |          |          |          |          |          |          |          |
+6  |          |          |          |          |          |          |          |          |          |          |          |          |
+7  |          |= "A1 = ( |          |          |          |          |          |          |          |          |          |          |
+8  |          |          |          |          |          |          |          |          |          |          |          |          |
+9  |          |          |          |          |          |          |          |          |          |          |          |          |
+10 |          |          |          |          |          |          |          |          |          |          |          |          |
+11 |          |          |          |          |          |          |          |          |          |          |          |          |
+12 |          |          |          |          |          |          |          |          |          |          |          |          |
+13 |          |          |          |          |          |          |          |          |          |          |          |          |
+14 |          |          |          |          |          |          |          |          |          |          |          |          |
+15 |          |          |          |          |          |          |          |          |          |          |          |          |
+16 |          |          |          |          |          |          |          |          |          |          |          |          |
+17 |          |          |          |          |          |          |          |          |          |          |          |          |
+18 |          |          |          |          |          |          |          |          |          |          |          |          |
+19 |          |          |          |          |          |          |          |          |          |          |          |          |
+20 |          |          |          |          |          |          |          |          |          |          |          |          |
+</actual>org.junit.ComparisonFailure: grid with one special string expected:&lt;...   |
+7  |          |[A1 = ( avg]|          |        ...&gt; but was:&lt;...   |
+7  |          |[= "A1 = ( ]|          |        ...&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testProcessCommandSpecialStrings(TestsALL.java:295)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEmptyGridText" classname="textExcel.TestsALL.A_Checkpoint2" time="0.015"/>
+    <testcase name="testEmptyStringCell" classname="textExcel.TestsALL.A_Checkpoint2" time="0.006">
+      <failure>
+        <expected>          </expected>
+        <actual>= ""      </actual>org.junit.ComparisonFailure: empty string cell text expected:&lt;[    ]      &gt; but was:&lt;[= ""]      &gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testEmptyStringCell(TestsALL.java:219)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testProcessCommand" classname="textExcel.TestsALL.A_Checkpoint2" time="0.027">
+      <failure>
+        <expected>   |A         |B         |C         |D         |E         |F         |G         |H         |I         |J         |K         |L         |
+1  |oNe       |          |          |          |          |          |          |          |          |          |          |          |
+2  |          |          |          |          |          |          |          |          |          |          |          |          |
+3  |          |          |          |          |          |          |          |          |          |          |          |          |
+4  |          |          |          |          |          |          |          |          |          |          |          |          |
+5  |          |          |          |          |          |          |          |          |          |          |          |          |
+6  |          |          |          |          |          |          |          |          |          |          |          |          |
+7  |          |          |          |          |          |          |          |          |          |          |          |          |
+8  |          |          |          |          |          |          |          |          |          |          |          |          |
+9  |          |          |          |          |          |          |          |          |          |          |          |          |
+10 |          |          |          |          |          |          |          |          |          |          |          |          |
+11 |          |          |          |          |          |          |          |          |          |          |          |          |
+12 |          |          |          |          |          |          |          |          |          |          |          |          |
+13 |          |          |          |          |          |          |          |          |          |          |          |          |
+14 |          |          |          |          |          |          |          |          |          |          |          |          |
+15 |          |          |          |          |          |          |          |          |          |          |          |          |
+16 |          |          |          |          |          |          |          |          |          |          |          |          |
+17 |          |          |          |          |          |          |          |          |          |          |          |          |
+18 |          |          |          |          |          |          |          |          |          |          |          |          |
+19 |          |          |          |          |          |          |          |          |          |          |          |          |
+20 |          |          |          |          |          |          |          |          |          |          |          |          |
+</expected>
+        <actual>   |A         |B         |C         |D         |E         |F         |G         |H         |I         |J         |K         |L         |
+1  |= "oNe"   |          |          |          |          |          |          |          |          |          |          |          |
+2  |          |          |          |          |          |          |          |          |          |          |          |          |
+3  |          |          |          |          |          |          |          |          |          |          |          |          |
+4  |          |          |          |          |          |          |          |          |          |          |          |          |
+5  |          |          |          |          |          |          |          |          |          |          |          |          |
+6  |          |          |          |          |          |          |          |          |          |          |          |          |
+7  |          |          |          |          |          |          |          |          |          |          |          |          |
+8  |          |          |          |          |          |          |          |          |          |          |          |          |
+9  |          |          |          |          |          |          |          |          |          |          |          |          |
+10 |          |          |          |          |          |          |          |          |          |          |          |          |
+11 |          |          |          |          |          |          |          |          |          |          |          |          |
+12 |          |          |          |          |          |          |          |          |          |          |          |          |
+13 |          |          |          |          |          |          |          |          |          |          |          |          |
+14 |          |          |          |          |          |          |          |          |          |          |          |          |
+15 |          |          |          |          |          |          |          |          |          |          |          |          |
+16 |          |          |          |          |          |          |          |          |          |          |          |          |
+17 |          |          |          |          |          |          |          |          |          |          |          |          |
+18 |          |          |          |          |          |          |          |          |          |          |          |          |
+19 |          |          |          |          |          |          |          |          |          |          |          |          |
+20 |          |          |          |          |          |          |          |          |          |          |          |          |
+</actual>org.junit.ComparisonFailure: grid with one string cell expected:&lt;...   |L         |
+1  |[oNe    ]   |          |     ...&gt; but was:&lt;...   |L         |
+1  |[= "oNe"]   |          |     ...&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testProcessCommand(TestsALL.java:273)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testDifferentCellTypes" classname="textExcel.TestsALL.A_Checkpoint2" time="0.003"/>
+    <testcase name="testMixedCaseClear" classname="textExcel.TestsALL.A_Checkpoint2" time="0.007">
+      <error>java.lang.NumberFormatException: For input string: "LEAR"&#13;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)&#13;
+	at java.lang.Integer.parseInt(Integer.java:580)&#13;
+	at java.lang.Integer.parseInt(Integer.java:615)&#13;
+	at textExcel.SpreadsheetLocation.getRow(SpreadsheetLocation.java:13)&#13;
+	at textExcel.Spreadsheet.processCommand(Spreadsheet.java:27)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testMixedCaseClear(TestsALL.java:345)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="textNonliteralClear" classname="textExcel.TestsALL.A_Checkpoint2" time="0.021">
+      <error>java.lang.NumberFormatException: For input string: "LEAR"&#13;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)&#13;
+	at java.lang.Integer.parseInt(Integer.java:580)&#13;
+	at java.lang.Integer.parseInt(Integer.java:615)&#13;
+	at textExcel.SpreadsheetLocation.getRow(SpreadsheetLocation.java:13)&#13;
+	at textExcel.Spreadsheet.processCommand(Spreadsheet.java:27)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.textNonliteralClear(TestsALL.java:358)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testProcessCommandMoreSpecialStrings" classname="textExcel.TestsALL.A_Checkpoint2" time="0.013">
+      <failure>
+        <expected>   |A         |B         |C         |D         |E         |F         |G         |H         |I         |J         |K         |L         |
+1  |          |          |          |          |          |          |          |          |          |          |          |          |
+2  |          |          |          |          |          |          |          |          |          |          |          |          |
+3  |          |          |          |          |          |          |          |          |          |          |          |          |
+4  |          |          |          |          |          |          |          |          |          |          |          |          |
+5  |          |          |          |          |          |          |          |          |          |          |          |          |
+6  |clear     |          |          |          |          |          |          |          |          |          |          |          |
+7  |          |          |          |          |          |          |          |          |          |          |          |          |
+8  |          |          |          |          |          |          |          |          |          |          |          |          |
+9  |          |          |          |          |          |          |          |          |          |          |          |          |
+10 |          |          |          |          |          |          |          |          |          |          |          |          |
+11 |          |          |          |          |          |          |          |          |          |          |          |          |
+12 |          |          |          |          |          |          |          |          |          |          |          |          |
+13 |          |          |          |          |          |          |          |          |          |          |          |          |
+14 |          |          |          |          |          |          |          |          |          |          |          |          |
+15 |          |          |          |          |          |          |          |          |          |          |          |          |
+16 |          |          |          |          |          |          |          |          |          |          |          |          |
+17 |          |          |          |          |          |          |          |          |          |          |          |          |
+18 |          |          |          |          |          |          |          |          |          |          |          |          |
+19 |          |          |          |          |          |          |          |          |          |          |          |          |
+20 |          |          |          |          |          |          |          |          |          |          |          |          |
+</expected>
+        <actual>   |A         |B         |C         |D         |E         |F         |G         |H         |I         |J         |K         |L         |
+1  |          |          |          |          |          |          |          |          |          |          |          |          |
+2  |          |          |          |          |          |          |          |          |          |          |          |          |
+3  |          |          |          |          |          |          |          |          |          |          |          |          |
+4  |          |          |          |          |          |          |          |          |          |          |          |          |
+5  |          |          |          |          |          |          |          |          |          |          |          |          |
+6  |= "clear" |          |          |          |          |          |          |          |          |          |          |          |
+7  |          |          |          |          |          |          |          |          |          |          |          |          |
+8  |          |          |          |          |          |          |          |          |          |          |          |          |
+9  |          |          |          |          |          |          |          |          |          |          |          |          |
+10 |          |          |          |          |          |          |          |          |          |          |          |          |
+11 |          |          |          |          |          |          |          |          |          |          |          |          |
+12 |          |          |          |          |          |          |          |          |          |          |          |          |
+13 |          |          |          |          |          |          |          |          |          |          |          |          |
+14 |          |          |          |          |          |          |          |          |          |          |          |          |
+15 |          |          |          |          |          |          |          |          |          |          |          |          |
+16 |          |          |          |          |          |          |          |          |          |          |          |          |
+17 |          |          |          |          |          |          |          |          |          |          |          |          |
+18 |          |          |          |          |          |          |          |          |          |          |          |          |
+19 |          |          |          |          |          |          |          |          |          |          |          |          |
+20 |          |          |          |          |          |          |          |          |          |          |          |          |
+</actual>org.junit.ComparisonFailure: grid after setting cell A6 expected:&lt;...   |          |
+6  |[clear    ] |          |       ...&gt; but was:&lt;...   |          |
+6  |[= "clear"] |          |       ...&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testProcessCommandMoreSpecialStrings(TestsALL.java:396)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testLowerCaseCellAssignment" classname="textExcel.TestsALL.A_Checkpoint2" time="0.004">
+      <failure>
+        <expected>Cell      </expected>
+        <actual>= "Cell"  </actual>org.junit.ComparisonFailure: cell text expected:&lt;[Cell    ]  &gt; but was:&lt;[= "Cell"]  &gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testLowerCaseCellAssignment(TestsALL.java:321)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testLongShortStringCell" classname="textExcel.TestsALL.A_Checkpoint2" time="0.007">
+      <failure>
+        <expected>Hello, wor</expected>
+        <actual>= "Hello, </actual>org.junit.ComparisonFailure: greeting cell text expected:&lt;[Hello, wor]&gt; but was:&lt;[= "Hello, ]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testLongShortStringCell(TestsALL.java:210)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testEmptyGridCells" classname="textExcel.TestsALL.A_Checkpoint2" time="0.005"/>
+    <testcase name="testMixedCaseClearLocation" classname="textExcel.TestsALL.A_Checkpoint2" time="0.005">
+      <error>java.lang.NumberFormatException: For input string: "LEAR"&#13;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)&#13;
+	at java.lang.Integer.parseInt(Integer.java:580)&#13;
+	at java.lang.Integer.parseInt(Integer.java:615)&#13;
+	at textExcel.SpreadsheetLocation.getRow(SpreadsheetLocation.java:13)&#13;
+	at textExcel.Spreadsheet.processCommand(Spreadsheet.java:27)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testMixedCaseClearLocation(TestsALL.java:374)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testShortStringCell" classname="textExcel.TestsALL.A_Checkpoint2" time="0.003">
+      <failure>
+        <expected>Hello     </expected>
+        <actual>= "Hello" </actual>org.junit.ComparisonFailure: hello cell text expected:&lt;[Hello    ] &gt; but was:&lt;[= "Hello"] &gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at textExcel.TestsALL$A_Checkpoint2.testShortStringCell(TestsALL.java:200)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

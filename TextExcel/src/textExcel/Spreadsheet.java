@@ -4,16 +4,15 @@ package textExcel;
 
 public class Spreadsheet implements Grid
 {
-	private int rows = 20;
-	private int cols = 12;
+	private int gridRows = 20;
+	private int gridCols = 12;
 	private Cell[][] cellSpreadSheet;
-	private String grid;
 	
 	public Spreadsheet(){
-		cellSpreadSheet = new Cell[rows][cols];
-		for(int i = 0; i < rows; i ++){
-			for(int j =0; j < cols; j++){
-				cellSpreadSheet[i][j] = new EmptyCell();
+		cellSpreadSheet = new Cell[gridRows][gridCols];
+		for(int i = 0; i < gridRows; i ++){
+			for(int j =0; j < gridCols; j++){
+				cellSpreadSheet[i][j] = new EmptyCell();                        //Creates spreadsheet
 			}
 		}
 	}
@@ -23,65 +22,57 @@ public class Spreadsheet implements Grid
 
 	public String processCommand(String command)
 	{
-		if(command.trim() == ""){
-			return "";
-		}else{
-			String[] split = command.split(" ");
-			if(command.equals("clear")){
-				return grid;
-			}else if(split.length == 1){
-				cellInspection(command);
-				return getGridText();
-			} else if(command.contains("=")){
-				assign(command);
-			}else if(command.contains("clear")){
-				clearCell(command);
-			}
+		String[] split = command.split(" ");
+		SpreadsheetLocation loc = new SpreadsheetLocation(split[0].toUpperCase());  // find location
+		int row = loc.getRow();
+		int col = loc.getCol();
+		
+		if((command.trim()).equals("")){
+			return "";                                                            //Checks for blank command
 		}
-		return "Process Command";
+		if(((command.trim()).toLowerCase()).equals("clear")){
+			clear();
+		}else if(split.length == 1){
+			return cellInspection(row, col);
+		} else if(command.contains("=")){                                         //checks which method to run
+			assign(row, col, command.substring(command.indexOf("=")));
+		}else if(command.contains("clear") && split.length > 1){
+			clearCell(row, col);
+		}
+		return getGridText();
 	}
 	
-	public Cell cellInspection(String command){
-		int row = command.charAt(0) - 'A';
-		int col = Integer.parseInt(command.substring(1));
-		return cellSpreadSheet[row][col];
+	public String cellInspection(int row, int col){
+		return cellSpreadSheet[row][col].fullCellText();
 	}
 	
-	public void assign(String command){
-		String text;
-		int row = command.charAt(0) - 'A';
-		int column = command.charAt(1);
-		text = command.substring(command.indexOf("=") + 2, command.length() - 1);
-		cellSpreadSheet[row][column] = new TextCell(text);
+	public void assign(int row, int col, String text){			//finds assignment value and assigns cells to value
+		cellSpreadSheet[row][col] = new TextCell(text);				
 	}
 	
-	public Cell[][] clear(){
-		for(int i = 0; i < rows; i ++){
-			for(int j =0; j < cols; j++){
-				cellSpreadSheet[i][j] = new EmptyCell();
+	public void clear(){
+		for(int i = 0; i < gridRows; i ++){
+			for(int j =0; j < gridCols; j++){
+				cellSpreadSheet[i][j] = new EmptyCell();                //Assigns all cells to EmptyCell
 			}
 		}
-		return cellSpreadSheet;
 	}
-	public void clearCell(String command){
-		for(int i = 0; i < rows; i ++){
-			for(int j =0; j < cols; j++){
-				cellSpreadSheet[i][j] = new EmptyCell();
-			}
-		}
+	public void clearCell(int row, int col){
+		
+		cellSpreadSheet[row][col] = new EmptyCell();                       //assigns to EmptyCell
 	}
 	@Override
 	
 	
 	public int getRows()
 	{
-		return this.rows;
+		return this.gridRows;                                    //returns num rows
 	}
 
 	@Override
 	public int getCols()
 	{
-		return this.cols;
+		return this.gridCols;                                 //returns num columns
 	}
 
 	@Override
@@ -89,36 +80,27 @@ public class Spreadsheet implements Grid
 	{
 		int row = loc.getRow();
 		int col = loc.getCol();
-		Cell cell;
-		cell = cellSpreadSheet[row][col];
-		return cell;
-	}
+ 		return cellSpreadSheet[row][col];                                  //Returns cell at location
+	} 
 
 	@Override
 	public String getGridText()
 	{
-		grid = "   |";
-		char letter = 'A';
-		for(int i = 0; i < 12; i++){
-			grid =  grid + letter + "          |"; 
-			letter++;
+		String grid = "   |";
+		for(char i = 'A'; i <= 'L'; i++){
+			grid =  grid + i + "         |";   //Creates column names
 		}
-		grid = grid + "\n1  ";
-		for(int i = 0; i < 20; i++){
-			for(int j = 0; j < 12; j++){
-				grid = grid +  "|" + cellSpreadSheet[i][j].abbreviatedCellText();
-			}
-			int index  = i + 2;
-			if(index >= 21){
-				grid = grid + "|" + "\n";
+		for(int i = 1; i <= 20; i++){
+			if(i<=9){
+				grid = grid + "\n" + i + "  |";
 			}else{
-				grid = grid + "| " + "\n" + index + " ";
-				if(index < 10){
-					grid = grid + " ";
-				}
+				grid = grid + "\n" + i + " |";
+			}
+			for(int j = 0; j<12;j++){
+				grid = grid + cellSpreadSheet[i-1][j].abbreviatedCellText() + "|";   //adds text into cells
 			}
 		}
+		grid = grid + "\n";
 		return grid;
 	}
-
 }

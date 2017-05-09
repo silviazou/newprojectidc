@@ -1,0 +1,18 @@
+
+public class CreateCharacter {
+	private String name;
+	private String gender;
+	private int age;
+	
+	public CreateCharacter(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	public int getAge(){
+		return age;                       //returns age
+	}
+	public String getName(){
+		return name;                      //returns name
+	}
+}
